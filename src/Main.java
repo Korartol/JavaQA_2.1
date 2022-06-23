@@ -1,6 +1,13 @@
 public class Main {
     public static void main(String[] args) {
+        BonusMilesService service = new BonusMilesService();
+        int price = 10_000;
+        int miles = service.calculate(price);
+        System.out.println("Вы получили " + miles + " бонусных миль!");
+    }
+}
 
+/* Версия 1.0
         // Объявляете переменные для входных данных и
         // параметров программы: одну для хранения
         // стоимости билета, другую для хранения количества
@@ -17,3 +24,4 @@ public class Main {
 
     }
 }
+*/
